@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ghibli Arts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #0d1b2a;
+      color: #f4f4f4;
+    }
+    header {
+      background-color: #1b263b;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.6);
+      filter: contrast(1.1) brightness(0.95) saturate(0.9);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      filter: contrast(1.2) brightness(1) saturate(1);
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #1b263b;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ghibli Arts by SAI</h1>
+    <p>Original Moments, Ghibli-Inspired Spirit</p>
+  </header>
+
+  <section class="gallery">
+    <img src="DSC_0012.jpg" alt="Ghibli Art 1" />
+    <img src="DSC_0014.jpg" alt="Ghibli Art 2" />
+    <img src="DSC_0015.jpg" alt="Ghibli Art 3" />
+    <img src="DSC_0422.jpg" alt="Ghibli Art 4" />
+    <img src="DSC_0722.jpg" alt="Ghibli Art 5" />
+  </section>
+
+  <footer>
+    &copy; 2025 Ghibli Arts by Sai Smaran Mishra. All rights reserved.
+  </footer>
+</body>
+</html>
